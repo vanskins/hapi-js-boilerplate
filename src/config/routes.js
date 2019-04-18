@@ -1,5 +1,3 @@
-'use strict';
-
 const Login = require('../routes/Login/endpoints');
 const internals = {};
 

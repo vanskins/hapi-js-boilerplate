@@ -1,4 +1,5 @@
 'use strict';
+
 const internals = {};
 const options = {
     ops: {
@@ -18,7 +19,7 @@ const options = {
         ]
     }
 };
-internals.plugins = async = () => {
+internals.plugins = () => {
     return [
         {
             plugin: require('hapi-geo-locate'),
