@@ -5,6 +5,7 @@ const Plugins = require('./src/config/plugins');
 const init = async () => {
     await HapiServer.register(Plugins.get());
     await HapiServer.start();
+    require('./src/config/mongoDb');
     console.log('Server running on %s', HapiServer.info.uri);
 }
 

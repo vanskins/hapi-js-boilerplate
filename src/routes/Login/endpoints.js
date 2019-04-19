@@ -9,11 +9,6 @@ internals.endpoints = [
         method: 'GET',
         path: '/api/login',
         handler: handlers.login,
-        options: {
-            log: {
-                collect: true
-            }
-        },
     },
 ];
 
