@@ -1,8 +1,5 @@
 const Mongoose = require("mongoose"),
-  //The document structure definition
-    Mixed = Mongoose.Schema.Types.Mixed,
-    Schema = Mongoose.Schema,
-    ObjectId = Schema.Types.ObjectId;
+    Schema = Mongoose.Schema;
 
 const UserSchema = new Schema({
     username: String,
