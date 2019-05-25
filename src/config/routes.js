@@ -33,31 +33,6 @@ const nextRoutes = [
 ]
 
 internals.routes = nextRoutes.concat(Login.endpoints);
-
-// app.prepare().then(async () => {
-//     internals.server.route({
-//         method: 'GET',
-//         path: '/about',
-//         handler: pathWrapper(app, '/about')
-//     })
-//     internals.server.route({
-//         method: 'GET',
-//         path: '/_next/{p*}' /* next specific routes */,
-//         handler: nextHandlerWrapper(app)
-//     })
-//     internals.server.route({
-//         method: 'GET',
-//         path: '/static/{p*}' /* use next to handle static files */,
-//         handler: nextHandlerWrapper(app)
-//     })
-
-//     internals.server.route({
-//         method: 'GET',
-//         path: '/{p*}' /* catch all route */,
-//         handler: defaultHandlerWrapper(app)
-//     })
-// })
-
 internals.init = function (server) {
     app.prepare().then(async () => {
         server.route(internals.routes);

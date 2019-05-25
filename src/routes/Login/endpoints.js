@@ -8,6 +8,9 @@ internals.endpoints = [
     {
         method: 'GET',
         path: '/api/login',
+        options: {
+            cors: true,
+        },
         handler: handlers.login,
     },
 ];

@@ -3,7 +3,7 @@
 const Hapi = require('hapi');
 const Routes = require('./routes');
 const internals = {};
-const connection = { port: 5000, host: 'localhost' };
+const connection = { port: 5000, host: 'localhost', routes: {cors: true } };
 
 internals.server = Hapi.server(connection);
 internals.server.register([]);

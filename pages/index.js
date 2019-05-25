@@ -2,11 +2,13 @@ import React from 'react'
 import Link from 'next/link'
 
 export default () => (
-  <ul>
-    <li>
-      <Link href='/about' as='/about'>
-        <a>about</a>
-      </Link>
-    </li>
-  </ul>
+  <html>
+    <head>
+      <title>Test</title>
+    </head>
+    <body>
+      <h1>Hello world</h1>
+      <Link href='/about' as='/about'><a>About</a></Link>
+    </body>
+  </html>
 )
